@@ -45,14 +45,15 @@ body {
 
 .responsive {
   max-width: 75%;
-  /* width: 100%; */
   height: auto;
 }
 
 img {
   margin: 15px;
-  /* object-fit: cover; */
-  /* object-position: bottom; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
   border-radius: var(--borderRadius);
   box-shadow: var(--shadow-4);
 }
@@ -60,4 +61,11 @@ img {
 .displayBox {
   width: 100%;
   font: var(--bodyFont);
+}
+
+.scroll-box {
+  overflow-y: auto; /* adds a scroll bar when content overflows */
+  height: 500px;
+  float: left;
+  padding: 1rem;
 }
