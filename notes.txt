@@ -1,0 +1,8 @@
+b4 in index.html creates a biolerplate bootstrap template that includes links to Bootstrap CSS stylesheet, jQuery, Popper.js, and Bootstrap JS.
+think about the layout of the webpage - a two column layout with a logo, cards, search box, etc.
+bootstrap uses a grid system that always consists of 12 columns 
+so to make a 2 column layout, both must add to a total of 12 (i.e., 8 + 4)
+cards are controls used inside of bootstrap to layout content 
+cards have headers, bodies, and can have footers
+classes built into bootstrap CSS that I'm using include mb-4, card-header, card-body, text-muted, etc
+
