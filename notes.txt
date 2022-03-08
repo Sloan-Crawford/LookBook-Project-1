@@ -1,3 +1,4 @@
+=== Bootstrap ===
 b4 in index.html creates a biolerplate bootstrap template that includes links to Bootstrap CSS stylesheet, jQuery, Popper.js, and Bootstrap JS.
 think about the layout of the webpage - a two column layout with a logo, cards, search box, etc.
 bootstrap uses a grid system that always consists of 12 columns 
@@ -6,3 +7,24 @@ cards are controls used inside of bootstrap to layout content
 cards have headers, bodies, and can have footers
 classes built into bootstrap CSS that I'm using include mb-4, card-header, card-body, text-muted, etc
 
+
+=== CSS ===
+
+
+
+=== JS ===
+
+ XPathResult.open("GET", url, true)
+ // run as an asynchronous request on a different thread
+
+ xhr.send(); 
+ // initiates network traffic (gets file from server)
+
+readystate can run 4 numbers (I want to trigger a function when file is done loading)...
+0 = unsent, 1 = document is open, 2 = received headers/info, 3 = loading file back, 4 = done
+
+xhr.status == 200
+// means the transaction/request is ok
+
+document.getElementById("fileContent").innerHTML = currentBook;
+// at this point I have successfully loaded the file from disc(server), streamed it back through HTTP and placed it in the website dynamically and changed the innerHTML content.

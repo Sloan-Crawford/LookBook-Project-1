@@ -10,7 +10,8 @@
     />
     <!-- custom style sheet -->
     <link rel="stylesheet" href="style.css" />
-
+    <!-- JS functionality -->
+    <script src="SearchString.js"></script>
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -61,12 +62,92 @@
                 </span>
               </div>
             </div>
+            <div class="card-footer" id="searchstat"></div>
+          </div>
+          <!-- book selection widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Choose a Book</h5>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12">
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a
+                        href="#"
+                        onclick="loadBook('Frankenstein.txt', 'Frankenstein')"
+                        >Frankenstein</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        onclick="loadBook('Pride-And-Prejudice.txt', 'Pride And Prejudice')"
+                        >Pride And Prejudice</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" onclick="loadBook('Walden.txt', 'Walden')"
+                        >Walden</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Highest Word Count -->
+          <div class="card my-4">
+            <h5 class="card-header">Highest Word Count</h5>
+            <div class="card-body">
+              <div class="row">
+                <div class="column-md-12">
+                  <ul class="list-unstyled mb-0" id="mostUsed">
+                    <!-- dynamically added with JS -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Lowest Word Count -->
+          <div class="card my-4">
+            <h5 class="card-header">Lowest Word Count</h5>
+            <div class="card-body">
+              <div class="row">
+                <div class="column-md-12">
+                  <ul class="list-unstyled mb-0" id="leastUsed">
+                    <!-- dynamically added with JS -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Document Info -->
+          <div class="card my-4">
+            <h5 class="card-header">Document Info</h5>
+            <div class="card-body">
+              <div class="row">
+                <div class="column-md-12">
+                  <ul class="list-unstyled mb-0" id="docInfo">
+                    <!-- dynamically added with JS -->
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- footer -->
+    <footer class="page-footer">
+      <p>
+        &copy; <span id="date"></span>
+        <span class="footer-logo"> LookBook </span>
+        Built by
+        <a href="http://www.johnsmilga.com">Sloan Crawford</a>
+      </p>
+    </footer>
+    <!-- Additional JavaScript -->
+    <!-- jQuery, Popper.js, Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
