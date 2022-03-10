@@ -29,7 +29,16 @@ html {
   --smallText: 0.7em;
 }
 
+main {
+  margin: 0 auto;
+  /* or: align-self: center */
+  max-width: 80ch;
+}
+
 body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   background: #00b4db; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -70,34 +79,51 @@ img {
   padding: 1rem;
 }
 
+.card {
+  background: rgba(0, 0, 0, 0.8);
+}
+.card-footer {
+  justify-content: center;
+  display: flex;
+}
+
 /* footer */
 .page-footer {
   height: 4rem;
   background: rgba(254, 254, 254, 0.961);
-  color: black;
+  color: rgb(92, 88, 88);
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: auto;
 }
 .page-footer p {
-  margin-bottom: 0;
+  margin: 1em;
 }
+
 .footer-logo,
 .page-footer a {
   color: rgb(255, 153, 0);
 }
-@media screen and (max-width: 590px) {
+@media screen and (min-width: 900px) {
   .page-footer {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
-@media screen and (max-width: 465px) {
+@media screen and (max-width: 708px) {
   .page-footer {
-    font-size: 0.8rem;
+    flex-direction: column;
+    padding: 3.5em;
+  }
+  .page-footer p {
+    margin: 0.15em;
   }
 }
-@media screen and (max-width: 410px) {
-  .page-footer {
-    font-size: 0.7rem;
-  }
+
+.social-list__item {
+  margin: 0 0.5em;
+}
+
+.social-list__link {
+  padding: 1em;
 }

@@ -10,6 +10,11 @@
     />
     <!-- custom style sheet -->
     <link rel="stylesheet" href="style.css" />
+    <!-- font-awesome (from cdn.js)-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <!-- JS functionality -->
     <script src="SearchString.js"></script>
     <!-- Bootstrap CSS -->
@@ -34,7 +39,7 @@
             <h2 class="card-header" id="fileName">Title of Book</h2>
             <div class="card-body">
               <div class="displayBox scroll-box" id="fileContent">
-                Choose a book from the right
+                Choose a book from the list
               </div>
             </div>
             <div class="card-footer text-muted">
@@ -44,30 +49,6 @@
         </div>
         <!-- sidebar content -->
         <div class="col-md-4">
-          <!-- search widget -->
-          <div class="card my-4">
-            <h5 class="card-header">Search</h5>
-            <div class="card-body">
-              <div class="input-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="keyword"
-                  placeholder="Search for..."
-                />
-                <span class="input-group-btn">
-                  <button
-                    class="btn btn-secondary"
-                    type="button"
-                    onclick="performMark()"
-                  >
-                    Search
-                  </button>
-                </span>
-              </div>
-            </div>
-            <div class="card-footer" id="searchstat"></div>
-          </div>
           <!-- book selection widget -->
           <div class="card my-4">
             <h5 class="card-header">Choose a Book</h5>
@@ -94,10 +75,41 @@
                         >Walden</a
                       >
                     </li>
+                    <li>
+                      <a
+                        href="#"
+                        onclick="loadBook('The-Wonderful-Wizard-Of-Oz', 'The Wonderful Wizard of Oz')"
+                        >The Wonderful Wizard of Oz</a
+                      >
+                    </li>
                   </ul>
                 </div>
               </div>
             </div>
+          </div>
+          <!-- search widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Search</h5>
+            <div class="card-body">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="keyword"
+                  placeholder="Search for..."
+                />
+                <span class="input-group-btn">
+                  <button
+                    class="btn btn-secondary"
+                    type="button"
+                    onclick="performMark()"
+                  >
+                    Search
+                  </button>
+                </span>
+              </div>
+            </div>
+            <div class="card-footer" id="searchstat"></div>
           </div>
           <!-- Highest Word Count -->
           <div class="card my-4">
@@ -153,8 +165,24 @@
       <p>
         &copy; <span id="date"></span>
         <span class="footer-logo"> LookBook </span>
-        Built by
+        built by
         <a href="http://www.google.com">Sloan Crawford</a>
+      </p>
+      <p>
+        <a href="mailto:sloan.crawford@gmail.com">sloan.crawford@gmail.com</a>
+      </p>
+      <p class="social-list__item">
+        <a class="social-list__link" href="https://github.com/Sloan-Crawford"
+          ><i class="fab fa-github" aria-hidden="true"></i
+        ></a>
+        <a class="social-list__link" href="https://twitter.com"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a
+          class="social-list__link"
+          href="https://www.linkedin.com/in/sloan-crawford-3b102262/"
+          ><i class="fab fa-linkedin" aria-hidden="true"></i
+        ></a>
       </p>
     </footer>
     <!-- Additional JavaScript -->
