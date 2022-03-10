@@ -74,13 +74,19 @@ img {
 
 .scroll-box {
   overflow-y: auto; /* adds a scroll bar when content overflows */
-  height: 500px;
+  max-height: 600px;
   float: left;
   padding: 1rem;
 }
 
-.card {
-  background: rgba(0, 0, 0, 0.8);
+.book-list {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+.card-header {
+  text-align: center;
 }
 .card-footer {
   justify-content: center;
