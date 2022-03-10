@@ -56,7 +56,11 @@
                   placeholder="Search for..."
                 />
                 <span class="input-group-btn">
-                  <button class="btn btn-secondary" type="button">
+                  <button
+                    class="btn btn-secondary"
+                    type="button"
+                    onclick="performMark()"
+                  >
                     Search
                   </button>
                 </span>
@@ -140,6 +144,7 @@
         </div>
       </div>
     </div>
+    <!-- template for word count cards -->
     <script id="template-ul-items" type="text/template">
       <li>{{val}}</li>
     </script>

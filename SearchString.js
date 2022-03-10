@@ -129,4 +129,34 @@ function getStopWords() {
 // highlights the words from the search input
 function performMark() {
 
+ // read the keyword
+ var keyword = document.getElementById("keyword").value;
+ var display = document.getElementById("fileContent");
+
+ var newContent = "";
+ 
+ // locate the items that are currently marked
+ let spans = document.querySelectorAll("mark");
+
+ for(var i = 0; i < spans.length; i++) {
+  spans[i].outerHTML = spans[i].innerHTML;
+ }
+
+ var re = new RegExp(keyword, "gi"); // g = global, i = case insensitive
+ var replaceText = "<mark id='markme'>$&</mark>"; 
+ var bookContent = display.innerHTML;
+
+ // add the mark to the book content (replaces the $&)
+ newContent = bookContent.replace(re, replaceText);
+
+ display.innerHTML = newContent;
+ var count = document.querySelectorAll("mark").length;
+ document.getElementById("searchstat").innerHTML = "found " + count + " matches";
+
+ // scroll to first found work
+ if(count > 0) {
+  var element = document.getElementById("markme");
+  element.scrollIntoView();
+ };
+
 }
