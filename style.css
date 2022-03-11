@@ -27,6 +27,9 @@ html {
   --headingFont: 'Roboto', sans-serif;
   --bodyFont: 'Nunito', sans-serif;
   --smallText: 0.7em;
+
+  /* colors */
+  --secondaryColor: rgb(255, 153, 0);
 }
 
 main {
@@ -93,6 +96,10 @@ img {
   display: flex;
 }
 
+.btn-secondary {
+  background: var(--secondaryColor);
+}
+
 /* footer */
 .page-footer {
   height: 4rem;
@@ -109,7 +116,7 @@ img {
 
 .footer-logo,
 .page-footer a {
-  color: rgb(255, 153, 0);
+  color: var(--secondaryColor);
 }
 @media screen and (min-width: 900px) {
   .page-footer {

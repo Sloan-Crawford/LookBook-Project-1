@@ -1,3 +1,5 @@
+<pre>
+ <code class="language-javascript">
 // Load a book
 function loadBook(filename, displayName){
  let currentBook = "";
@@ -160,3 +162,5 @@ function performMark() {
  };
 
 }
+ </code>
+</pre>
