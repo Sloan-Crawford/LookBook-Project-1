@@ -28,9 +28,33 @@
     <link rel="stylesheet" href="prism.css" />
   </head>
   <body>
+    <!-- nav -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <!-- header -->
+        <div class="nav-header">
+          <a href="index.html" class="nav-logo">
+            <img src="./images/Sloan_logo.png" alt="Sloan's logo" />
+          </a>
+          <button type="button" class="nav-btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <!-- links -->
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">home</a>
+          <a href="_blank" class="nav-link">Portfolio</a>
+          <a href="code.html" class="nav-link">Code</a>
+          <div class="nav-link contact-link">
+            <a href="contact.html" class="btn"> contact </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
     <div class="container">
+      <!-- main: logo, menu and book content -->
       <div class="row">
-        <!-- main: logo and book content -->
         <div class="col-md-8">
           <img
             class="responsive"
@@ -40,18 +64,13 @@
           <div class="card mb-4">
             <h2 class="card-header" id="fileName">Title of Book</h2>
             <div class="card-body">
-              <div class="displayBox scroll-box" id="fileContent">
+              <div class="displayBox scroll-box1" id="fileContent">
                 Choose a book from the list
               </div>
             </div>
-            <div class="card-footer text-muted">
-              <button class="btn btn-secondary" type="button">
-                <a href="" target="_blank">Sloan's Portfolio</a>
-              </button>
-            </div>
           </div>
         </div>
-        <!-- sidebar content -->
+
         <div class="col-md-4">
           <!-- book selection widget -->
           <div class="card my-4">
