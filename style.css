@@ -198,7 +198,7 @@ img {
   margin: 1.4rem 0;
 }
 .book-list li a {
-  background: rgb(46, 67, 113);
+  background: rgb(181, 94, 18);
   /* border: 2px solid var(--secondaryColor); */
   border-radius: var(--borderRadius);
   padding: 0.7em;
@@ -208,7 +208,7 @@ img {
 
 .book-list li a:hover {
   text-decoration: none;
-  color: var(--secondaryColor);
+  color: rgb(159, 206, 233);
 }
 
 .card {
