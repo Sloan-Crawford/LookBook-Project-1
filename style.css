@@ -194,6 +194,23 @@ img {
   text-align: center;
 }
 
+.book-list li {
+  margin: 1.4rem 0;
+}
+.book-list li a {
+  background: rgb(46, 67, 113);
+  /* border: 2px solid var(--secondaryColor); */
+  border-radius: var(--borderRadius);
+  padding: 0.7em;
+  text-decoration: none;
+  color: #fff;
+}
+
+.book-list li a:hover {
+  text-decoration: none;
+  color: var(--secondaryColor);
+}
+
 .card-header {
   text-align: center;
   color: #fff;
