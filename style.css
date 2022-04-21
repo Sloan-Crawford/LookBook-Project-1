@@ -211,6 +211,10 @@ img {
   color: var(--secondaryColor);
 }
 
+.card {
+  margin: 1.4rem 0;
+}
+
 .card-header {
   text-align: center;
   color: #fff;
