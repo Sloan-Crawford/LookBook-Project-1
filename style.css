@@ -30,6 +30,7 @@ html {
 
   /* colors */
   --secondaryColor: rgb(255, 153, 0);
+  --accentColor: rgb(46, 67, 113);
 }
 
 main {
@@ -101,7 +102,6 @@ body {
   transition: var(--transition);
   flex-direction: row;
   align-items: center;
-  /* width: 100%;  */
 }
 
 .nav-link {
@@ -115,9 +115,9 @@ body {
   margin-right: 1rem;
 }
 
-.nav-link:hover,
-.contact-link a:hover {
-  color: var(--accentColor2);
+.nav-link:hover {
+  color: var(--accentColor);
+  filter: brightness(150%);
 }
 
 .contact-link a {
@@ -195,20 +195,19 @@ img {
 }
 
 .book-list li {
-  margin: 1.4rem 0;
+  margin: 1.2rem 0;
 }
 .book-list li a {
-  background: rgb(181, 94, 18);
-  /* border: 2px solid var(--secondaryColor); */
-  border-radius: var(--borderRadius);
-  padding: 0.7em;
   text-decoration: none;
-  color: #fff;
+  color: var(--accentColor);
+  font-weight: 600;
 }
 
 .book-list li a:hover {
-  text-decoration: none;
-  color: rgb(159, 206, 233);
+  /* transition: var(--transition); */
+  color: var(--secondaryColor);
+  /* filter: brightness(120%); */
+  font-weight: bold;
 }
 
 .card {
@@ -242,6 +241,13 @@ img {
   color: #fff;
 }
 
+#markme {
+  color: var(--secondaryColor);
+  font-weight: 500;
+  background: var(--accentColor);
+  border-radius: var(--borderRadius);
+}
+
 /* footer */
 .page-footer {
   height: 4rem;
@@ -260,20 +266,9 @@ img {
 .page-footer a {
   color: var(--secondaryColor);
 }
-@media screen and (min-width: 900px) {
-  .page-footer {
-    font-size: 1.2rem;
-  }
-}
 
-@media screen and (max-width: 708px) {
-  .page-footer {
-    flex-direction: column;
-    padding: 3.5em;
-  }
-  .page-footer p {
-    margin: 0.15em;
-  }
+.page-footer a:hover {
+  text-decoration: none;
 }
 
 .social-list__item {
@@ -282,4 +277,27 @@ img {
 
 .social-list__link {
   padding: 1em;
+}
+
+@media screen and (min-width: 900px) {
+  .page-footer {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #Title {
+    font-size: 1.7em;
+  }
+}
+
+@media screen and (max-width: 708px) {
+  .page-footer {
+    flex-direction: column;
+    padding: 3.5em;
+    font-size: 0.9rem;
+  }
+  .page-footer p {
+    margin: 0.15em;
+  }
 }
